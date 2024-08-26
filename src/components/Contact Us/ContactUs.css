@@ -1,0 +1,101 @@
+.contact-us {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    padding: 40px;
+}
+
+.contact-us-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.contact-info h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.contact-info p {
+    font-size: 16px;
+    margin: 5px 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgb(214, 212, 212);
+}
+
+.opening-hours {
+    margin-top: 20px;
+}
+
+.opening-hours h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.opening-hours ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.opening-hours ul li {
+    font-size: 16px;
+    margin: 5px 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgb(214, 212, 212);
+}
+
+.contact-form {
+    /* width: 60%; */
+    background-color: #E5E5E5; /* Light grey background */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+}
+
+.contact-form h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form form label {
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form form input,
+.contact-form form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.contact-form form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #000; /* Black background for the button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form form button:hover {
+    background-color: #555; /* Darker grey on hover */
+}
+@media (max-width: 400px) {
+  .contact-us-container {
+    display: flex;
+    flex-direction: column;
+}
+}

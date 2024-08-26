@@ -1,0 +1,106 @@
+/* Common styles for CarCard */
+.car-card {
+  background-color: #fff;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 0 !important;
+  text-align: center;
+  padding-bottom: 25px !important;
+}
+
+.car-card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  transition: transform 0.18s ease-in-out;
+  border-radius: 5px;  
+  /* object-fit: cover;   */
+}
+
+.car-card:hover img {
+  transform: scale(1.03);
+}
+
+.car-card h3 {
+  color: rgb(15, 36, 66);
+  font-size: 18px;
+  font-weight: 640;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+.car-card p {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.car-card a {
+  text-decoration: none;
+  color: #292727;
+  font-weight: 650;
+  border: 1px solid rgb(185, 202, 228);
+  padding: 7px;
+  border-radius: 5px; 
+}
+.car-card a:hover {
+  background-color: rgb(230, 15, 15);
+  color: white;
+  transition: 0.7s ease;
+  text-decoration: none;
+}
+
+/* Styles specific to FeaturedCars */
+.car-card.featured {
+  background-color: #f9f9f9;
+}
+.car-card.featured:hover img {
+    transform: scale(1);
+  }
+
+/* Styles specific to CurrentStock */
+.car-card.current-stock {
+  background-color: #d6d4d452;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+.car-card.current-stock:hover img {
+  transform: scale(1);
+} 
+
+.car-card-price {
+  font-weight: bold;
+  margin: auto;
+  margin-top: -15px;
+  padding-bottom: 4px;
+  font-size: 17px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.418);
+  margin-bottom: 8px;
+  width: 90%;
+}
+.car-card-price.sold {
+  color: red;
+  font-weight: bold;
+}
+
+.car-card-mileage,
+.car-card-year {
+  padding-right: 7px;
+  margin-right: 7px;
+  border-right: 2px solid rgb(197, 195, 195);
+  font-size: 17px;
+  font-weight: 500;
+  color: rgb(71, 71, 71);
+}
+
+.car-card-transmission {
+  font-size: 17px;
+  font-weight: 500;
+  color: rgb(71, 71, 71);
+}
+
+.car-card-info {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}

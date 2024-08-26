@@ -1,0 +1,248 @@
+.carousel-item img {
+  max-height: 800px;
+  object-fit: cover;
+}
+.thumbnail-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.thumbnail {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin: 0 5px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+  border-radius: 5px;
+}
+
+.thumbnail.active {
+  border-color: #031349;
+}
+/* Car Name */
+.panner-details h1 {
+  text-align: center;
+  margin-top: 40px;
+  font-weight: 700;
+}
+/* Car Price */
+
+.panner-details h2 {
+  width: max-content;
+  padding: auto;
+  margin: auto;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: rgb(255, 8, 8);
+}
+
+.expand-on-hover {
+  width: 200px;
+  height: 3px;
+  background-color: #ccc;
+  margin: 10px auto;
+  transition: all 0.3s ease;
+}
+.expand-on-hover:hover {
+  width: 800px;
+}
+/* Contact Buttons */
+.panner-details-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 40px;
+}
+.contact-links {
+  padding: 14px;
+  font-weight: 600;
+  border-radius: 7px;
+  transition: all 0.3s ease;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border: 2px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}
+.contact-links:hover {
+  background-color: white;
+  color: black;
+}
+.panner-details-links-icon {
+  padding: auto;
+  margin: auto;
+  margin-right: 2px;
+}
+
+/* Car Detail Container */
+
+.car-detail-container {
+  margin: 40px 0;
+}
+
+.car-detail-container h2,
+.specification-section h2 {
+  text-align: center;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+
+.overview-details {
+  margin-top: 30px;
+}
+/* overview image */
+.car-detail-image {
+  width: 100%;
+  border-radius: 5px;
+}
+/* overview table */
+.overview-item {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.overview-key {
+  font-weight: bold;
+  text-align: left;
+}
+
+/* Specification Section */
+
+.specification-section {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.specification-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;  
+  column-gap:30px ;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.spec-item {
+  width: calc(33.33% - 20px); /* Three columns */
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+  font-weight: 600;
+  padding-top: 20px;
+}
+
+.spec-item span {
+  color: #4e4e4e;
+  margin-right: 10px;
+  font-size: 1.1em;
+  font-weight: 700;
+}
+
+/* Selling Car Section */
+.selling-car-section {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 50px 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  margin-bottom: 100px;
+}
+.selling-car-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+.selling-car-section p {
+  max-width: 600px;
+  margin: 20px 0;
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+.selling-car-button {
+  background-color: #ccc;
+  color: #000;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 1.2em;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.selling-car-button:hover {
+  background-color: #757575;
+}
+
+/*** Media Queries***/
+@media (max-width: 1000px) {
+  .specification-container {
+    justify-content: center;
+    gap: 5px;
+  }
+  .spec-item {
+    width: calc(40% - 20px);
+  }
+  .overview-item {
+    width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .car-detail-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 767px) {
+  .specification-container {
+    justify-content: center;
+  }
+  .spec-item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 600px) {
+  .selling-car-section h2 {
+    font-size: 1.5em;
+  }
+  .selling-car-section p {
+    font-size: 1em;
+  }
+  .selling-car-button {
+    padding: 5px 10px;
+    font-size: 1.2em;
+  }
+  .contact-links {
+    font-size: small;
+    padding: 7px;
+  }
+  .overview-item {
+    width: 80%;
+    padding: auto;
+    margin: auto;
+  }
+}
+@media (max-width: 450px) {
+  .panner-details-links {
+    gap: 5px;
+    margin-top: 15px;
+  }
+}
