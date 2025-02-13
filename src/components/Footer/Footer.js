@@ -55,21 +55,22 @@ const Footer = () => {
         <div className="footer-social">
                 <p>Follow us on</p>
                 <a href="https://www.instagram.com/bigmotorsco/" target="_blank" rel="noopener noreferrer">
-                <FaInstagram/>
+                <FaInstagram className="icon"/>
                 </a>
                 <a href="https://www.facebook.com/bigmotorsco/" target="_blank" rel="noopener noreferrer">
-                <FaFacebook/>
+                <FaFacebook className="icon"/>
                 </a>
                 <a href="https://www.youtube.com/@bigmotors" target="_blank" rel="noopener noreferrer">
-                <FaYoutube/>
+                <FaYoutube className="icon"/>
                 </a>
                 <a href="https://www.linkedin.com/company/bigmotors/" target="_blank" rel="noopener noreferrer">
-                <FaLinkedin/>
+                <FaLinkedin className="icon"/>
                 </a>                
         </div>
         <div className="footer-about-us">
           <p >
-            Address: Meydan Avenue – Nad Al Sheba 1 – Dubai – United Arab Emirates. | Tel: +971 50 668 6691 | Email: i@biggroup.me
+            Address: Hamdan Street – Khalidiya- Abu Dabi – United Arab Emirates. | Tel: +971 50 668 6691 | Email: i@bigmotors.co 
+
           </p>
         </div>
         <div className="footer-copyright">

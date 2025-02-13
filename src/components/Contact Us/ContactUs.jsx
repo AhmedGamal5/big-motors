@@ -22,7 +22,7 @@ const ContactUs = () => {
       ...prevFormData,
       [name]: value,
     }));
-  };  
+  };
   const handleSubmit = (e) => {
     e.preventDefault();
     emailjs
@@ -32,7 +32,7 @@ const ContactUs = () => {
         {
           from_name: formData.name,
           from_email: formData.email,
-          phone: formData.phone || '',
+          phone: formData.phone || "",
           message: formData.message,
         },
         process.env.REACT_APP_EMAILJS_USER_ID
@@ -54,11 +54,11 @@ const ContactUs = () => {
           alert("Failed to send message. Please try again.");
         }
       );
-};
+  };
 
   return (
     <>
-     <NavBar />
+      <NavBar />
       <section>
         <div className="first-section">
           <img
@@ -73,7 +73,7 @@ const ContactUs = () => {
               <Row>
                 <Col sm={12} md={6} lg={4} className="contact-info">
                   <h2>Big Motors</h2>
-                  <p>Email: i@biggroup.me</p>
+                  <p>Email: i@bigmotors.co </p>
                   <p>Tel:+971506686691</p>
                   <div className="opening-hours">
                     <h3>Opening Hours</h3>
@@ -159,7 +159,7 @@ const ContactUs = () => {
             </iframe>
                 </Col>
               </Row> */}
-            </Container>          
+            </Container>
           </div>
           <div>
             <iframe
@@ -171,6 +171,7 @@ const ContactUs = () => {
               marginHeight="0"
               marginWidth="0"
               src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Big%20Motors%20Co%20-%20Meydan%20Avenue%20-%20Nad%20Al%20Sheba%201%20-%20Dubai%20-%20United%20Arab%20Emirates+(Big%20Motors%20Co)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+            // src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2869.6316219863425!2d54.366026674127355!3d24.49344215984781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e66673f0fdad3%3A0xc0e9b602db8a17f4!2sHamdan%20Bin%20Mohammed%20St%20-%20Abu%20Dhabi%20-%20United%20Arab%20Emirates!5e1!3m2!1sen!2seg!4v1739441988404!5m2!1sen!2seg"
             >
               <a href="https://www.gps.ie/">gps vehicle tracker</a>
             </iframe>

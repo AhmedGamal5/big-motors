@@ -78,11 +78,14 @@
 
 .footer-social a {
   margin: 0 10px;
-  transition: all 0.3s ease;
   font-size: 20px;
   color: white;
+  
 }
-.footer-social a :hover {
+.footer-social .icon{
+  transition: all 0.4s ease;
+}
+.footer-social .icon:hover {
   color: #000000;
 }
 .footer-social p {
