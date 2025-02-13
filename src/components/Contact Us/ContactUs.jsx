@@ -5,6 +5,7 @@ import Footer from "../Footer/Footer";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import NavBar from "../NavBar/NavBar";
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -57,6 +58,7 @@ const ContactUs = () => {
 
   return (
     <>
+     <NavBar />
       <section>
         <div className="first-section">
           <img

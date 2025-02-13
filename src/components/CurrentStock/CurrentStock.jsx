@@ -3,6 +3,7 @@ import "./CurrentStock.css";
 import carsData from "../../data/carsData";
 import CarCard from "../CarCard/CarCard";
 import Footer from "../Footer/Footer";
+import NavBar from "../NavBar/NavBar";
 
 const carsPerPage = 12;
 const CurrentStock = () => {
@@ -36,7 +37,8 @@ const CurrentStock = () => {
 
   return (
     <>
-      <section className="first-section" >
+    <NavBar />
+      <section className="first-section">
         <img
           src={`${process.env.PUBLIC_URL}/images/panner-pc-04.png`}
           alt="current-stock"
@@ -48,7 +50,12 @@ const CurrentStock = () => {
         <div className="current-stock-expand-on-hover"></div> */}
         <div className="car-grid">
           {currentCars.map((car) => (
-            <CarCard key={car.id} car={car} className="current-stock" showDetails={true} />
+            <CarCard
+              key={car.id}
+              car={car}
+              className="current-stock"
+              showDetails={true}
+            />
           ))}
         </div>
 

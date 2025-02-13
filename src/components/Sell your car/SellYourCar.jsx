@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import "./SellYourCar.css";
 import Footer from "../Footer/Footer";
+import NavBar from "../NavBar/NavBar";
 
 const SellYourCar = () => {
   const [formData, setFormData] = useState({
@@ -74,6 +75,7 @@ const SellYourCar = () => {
 
   return (
     <>
+     <NavBar />
       <section>
         <div className="first-section">
           <img

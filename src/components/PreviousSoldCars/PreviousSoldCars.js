@@ -3,12 +3,14 @@ import "./PreviousSoldCars.css";
 import carsData from "../../data/carsData";
 import CarCard from "../CarCard/CarCard";
 import Footer from "../Footer/Footer";
+import NavBar from "../NavBar/NavBar";
 
 
 const PreviousSoldCars = () => {
     const soldCars = carsData.filter((car) => car.sold);  
     return (
       <>
+       <NavBar />
        <section className="first-section" >
         <img
           src={`${process.env.PUBLIC_URL}/images/panner-pc-04.png`}
@@ -23,7 +25,7 @@ const PreviousSoldCars = () => {
               soldCars.map((car) => (
                 <CarCard key={car.id} car={car} showDetails={true} />
               ))
-            ) : (
+            ) :(
               <p className="car-grid-empty">No sold cars available.</p>
             )}
           </div>

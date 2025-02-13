@@ -1,0 +1,32 @@
+.logos-sec h2{
+    font-size: 40px;
+    line-height: 1.2em;
+    color: #0b163f;
+    font-family: "Font-Bold";
+
+}
+.logo-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.log-img {
+  width: 80%;
+}
+.log-img2 {
+  width: 50%;
+}
+#ferrari {
+  width: 60px;
+}
+#bentley {
+  width: 110px;
+}
+#aston-martin {
+  width: 110px;
+}
+#mclaren{
+    width:100%;
+ }
+

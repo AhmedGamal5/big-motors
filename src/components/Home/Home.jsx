@@ -5,6 +5,7 @@ import FeaturedCars from "../Featured-Cars/FeaturedCars";
 import ScrollContent from "../ScrollContent/ScrollContent";
 import Footer from "../Footer/Footer";
 import NavBar from "../NavBar/NavBar";
+import Logos from "../Logos/Logos";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
           className="img-soon"
         />
       </section>
+      <Logos />
       <FeaturedCars />
       <ScrollContent />
       <Footer />
