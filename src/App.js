@@ -10,6 +10,7 @@ import AboutUs from "./components/About Us/AboutUs";
 import ContactUs from "./components/Contact Us/ContactUs";
 import SellYourCar from "./components/Sell your car/SellYourCar";
 import PreviousSoldCars from "./components/PreviousSoldCars/PreviousSoldCars";
+import Error from "./components/Error/Error";
 
 function App() {
   useEffect(() => {
@@ -26,6 +27,7 @@ function App() {
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/:carName" element={<CarDetail />} />
         <Route path="/sell-your-car" element={<SellYourCar />} />
+        {/* <Route path="*" element={<Error />} /> */}
       </Routes>
     </BrowserRouter>
   );

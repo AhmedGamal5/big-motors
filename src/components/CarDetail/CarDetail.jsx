@@ -1,5 +1,3 @@
-// ********* using Cloudinary with Api  ********//
-
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import Carousel from "react-bootstrap/Carousel";
